@@ -60,7 +60,7 @@ class Parameters(object):
         self.time = 10
         self.relax_cycles = 10
         self.era = {}
-        self.era[0]  =  {'epochs': 1,      'logic_mode': 'driven',     'weight_update': True,      'predict_mode': False}
+        self.era[0]  =  {'epochs': 20,      'logic_mode': 'driven',     'weight_update': True,      'predict_mode': False}
         self.era[1]  =  {'epochs': 00,      'logic_mode': 'off',        'weight_update': False,     'predict_mode': False}
         self.era[2]  =  {'epochs': 00,      'logic_mode': 'driven',     'weight_update': False,     'predict_mode': True}
         self.epochs = sum([self.era[i]['epochs'] for i in self.era])
@@ -71,7 +71,7 @@ class Parameters(object):
         self.scale = 1.0
         self.bipartite = True
         self.node_recur = 0
-        self.bias_node_placement_separation = 6  #20   # 8 for 16 in 1600 /  24 for 8 in 10000 for 2D neighbor networks with 4 connections (or randomly connected networks) / 24 for 32 in 40k 2D neighbor networks / 16 for 32 in 10k neighbor networks
+        self.bias_node_placement_separation = 10  #20   # 8 for 16 in 1600 /  24 for 8 in 10000 for 2D neighbor networks with 4 connections (or randomly connected networks) / 24 for 32 in 40k 2D neighbor networks / 16 for 32 in 10k neighbor networks
         self.bias_node_link_separation = 5   # 5 for 16 in 1600 for 2D neighbor networks with 4 connections (or randomly connected networks)
 
 # node description parameters
@@ -80,7 +80,7 @@ class Parameters(object):
         # network node classes
         self.node_dict['discrete'][0]   =   {'quantity': 000,     'states': 2,    'connections': 4,   'mass': 0,    'node_ef': 1}
         self.node_dict['discrete'][1]   =   {'quantity': 000,     'states': 3,    'connections': 4,   'mass': 0,    'node_ef': 1}
-        self.node_dict['discrete'][2]   =   {'quantity': 392,     'states': 101,  'connections': 4,   'mass': 0,    'node_ef': 1}
+        self.node_dict['discrete'][2]   =   {'quantity': 892,     'states': 101,  'connections': 4,   'mass': 0,    'node_ef': 1}
 
         # logic node classes
         bias_target = 200.0

@@ -196,12 +196,9 @@ class Network(object):
                                 p += 1
                             if not test:
                                 print('placement conflict in neighbor nodes detected', count)
-                                for q in test_list:
-                                    print('separation', p, 'distance', metric_array[i,q])
                                 count += 1
                                 if i in viable_even_node_list: viable_even_node_list.remove(i)
                                 if i in viable_odd_node_list: viable_odd_node_list.remove(i)
-                                print(len(available_even_node_list), len(viable_even_node_list), len(available_odd_node_list), len(viable_odd_node_list))
                                 if len(viable_even_node_list)==0 or len(viable_odd_node_list)==0:
                                     print('neighbor node placement failure - execution terminated')
                                     self.kill_simulation()
