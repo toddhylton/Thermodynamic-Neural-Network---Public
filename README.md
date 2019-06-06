@@ -1,7 +1,7 @@
 # Thermodynamic Neural Network
 
 ## Introduction
-This file describes the software organization of the Thermodynamically Neural Network.  A manuscript describing the model is available at
+This file describes the software organization of the Thermodynamically Neural Network.  A manuscript describing the model is available at https://arxiv.org/abs/1906.01678 and is also in the repository.  If you would like to work with the code, please create another branch from the master.  I welcome your comments and questions.  My email is thylton@ucsd.edu.
 
 ## Abstract
 This work describes a thermodynamically motivated neural network model that self-organizes to transport charge associated with internal and external potentials while in contact with a thermal bath.  Isolated networks show multiscale dynamics and evidence of phase transitions, and externally driven networks evolve to efficiently connect external positive and negative potentials.  The model implements techniques for rapid, global, reversible, conservative equilibration of node states followed by slow, local, irreversible, dissipative adaptation of the edge states as a means to create multiscale order.  All interactions in the network are local and the network structures can be generic and recurrent.  The model integrates concepts of fluctuation, dissipation, adaptation and equilibration and offers an illustration of the thermodynamic evolution of organization in open systems.  The key conclusion of the work is that the dissipation of conserved physical quantities can drive the self-organization of open thermodynamic systems.
